@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 62.5%;
+}
+:root {
+  --main-color: #214669;
+  --seconday-color: #79d6d1;
+}
+/* -----------Header section-------- */
+
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.nudgeBanner {
+  background-color: var(--seconday-color);
+  padding: 10px;
+  color: #202020;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.offertitle {
+  left: 50%;
+  transform: translate(-50%);
+}
+.nudgeBanner ul {
+  margin-right: 5%;
+}
+.nudgeBanner ul li {
+  list-style: none;
+  background: transparent;
+  border: 0;
+  padding: 0px 16px !important;
+}
+.nudgeBanner ul li:not(:last-child) {
+  border-right: 1px solid #7f838e;
+}
+.brand_logo img {
+  width: 196px;
+  height: 50px;
+}
+
+#navbarSupportedContent .active_item {
+  color: var(--main-color);
+  font-weight: 600;
+}
+@media (max-width: 979px) {
+  .nudgeBanner ul {
+    display: none;
+  }
+}
+@media (min-width: 980px) and (max-width: 1400px) {
+  .nudgeBanner ul {
+    font-size: 10px !important;
+    margin-right: 0% !important;
+  }
+}
+/* -----------Main section-------- */
+.main {
+  padding: 0 2%;
+}
+.main .btn_Size {
+  background-color: #f3f3f3;
+  font-weight: 500;
+}
+
+/* card */
+.card {
+  width: calc(33.33% -60px);
+  margin: 0 30px 16px;
+}
+.btn_Size.active {
+  border-color: var(--main-color) !important;
+  color: #000 !important;
+}
+.discount_amount {
+  height: 70px;
+  width: 70px;
+  background-color: var(--seconday-color);
+  border-radius: 50%;
+  top: 3%;
+  left: 3%;
+}
+.favourite {
+  font-size: 30px;
+  color: #000;
+  border-radius: 50%;
+  top: 5%;
+  right: 5%;
+}
+.slider {
+  font-size: 30px;
+  color: #000;
+  border-radius: 50%;
+  top: 45%;
+  right: 5%;
+}
+
+#card_addToCart_section .minus {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transition: 0.3s;
+}
+#card_addToCart_section .plus {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transition: 0.3s;
+}
+#card_addToCart_section .minus:hover,
+#card_addToCart_section .plus:hover {
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% -20px);
+    margin: 0 10px 16px;
+  }
+}
+@media (min-width: 481px) and (max-width: 840px) {
+  .card {
+    width: calc(50% -20px);
+    margin: 0 10px 16px;
+  }
+}
+/* ------------------search section------------------- */
+#search {
+  background-color: var(--seconday-color);
+}
+#search .search-bar .form-control {
+  border-left: 50%;
+}
+#search .search-bar .input-group .input-group-append {
+  right: 0px;
+}
+/* -----------Footer section-------- */
